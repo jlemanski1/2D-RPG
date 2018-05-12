@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 10}
-  m_MinSize: {x: 950, y: 642}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -116,8 +116,8 @@ MonoBehaviour:
     y: 0
     width: 340
     height: 1710
-  m_MinSize: {x: 232, y: 471}
-  m_MaxSize: {x: 10002, y: 14021}
+  m_MinSize: {x: 232, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
   controlID: 134
 --- !u!114 &6
@@ -140,8 +140,8 @@ MonoBehaviour:
     y: 30
     width: 1919
     height: 2011
-  m_MinSize: {x: 838, y: 592}
-  m_MaxSize: {x: 18008, y: 18042}
+  m_MinSize: {x: 838, y: 613}
+  m_MaxSize: {x: 18008, y: 18063}
   vertical: 0
   controlID: 131
 --- !u!114 &7
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 340
     height: 991
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 23}
   m_Panes:
   - {fileID: 23}
@@ -306,8 +306,8 @@ MonoBehaviour:
     y: 0
     width: 1482
     height: 2011
-  m_MinSize: {x: 436, y: 592}
-  m_MaxSize: {x: 14006, y: 18042}
+  m_MinSize: {x: 436, y: 613}
+  m_MaxSize: {x: 14006, y: 18063}
   vertical: 1
   controlID: 132
 --- !u!114 &14
@@ -330,8 +330,8 @@ MonoBehaviour:
     y: 0
     width: 1482
     height: 1710
-  m_MinSize: {x: 436, y: 471}
-  m_MaxSize: {x: 14006, y: 14021}
+  m_MinSize: {x: 436, y: 492}
+  m_MaxSize: {x: 14006, y: 14042}
   vertical: 0
   controlID: 133
 --- !u!114 &15
@@ -550,20 +550,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Model
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Model
+  - Assets/Prefabs
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\_Development\_Unity Projects\2D-RPG\Tactical RPG
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9c2c0000
-    m_LastClickedID: 11420
-    m_ExpandedIDs: 00000000ee080000e8090000820a000000ca9a3bffffff7f
+    m_SelectedIDs: 34090000
+    m_LastClickedID: 2356
+    m_ExpandedIDs: 00000000f0080000ea090000840a000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -591,7 +591,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ee080000820a0000
+    m_ExpandedIDs: 00000000f0080000ea090000840a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -707,9 +707,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a02c0000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: f0fbffff00000000
+    m_ExpandedIDs: e2fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -798,9 +798,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
-    m_Target: 10
+    m_Target: 4.96
     speed: 2
-    m_Value: 10
+    m_Value: 4.96
   m_Ortho:
     m_Target: 0
     speed: 2
