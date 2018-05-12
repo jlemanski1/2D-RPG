@@ -202,7 +202,7 @@ public class LevelCreator : MonoBehaviour {
         foreach (Tile t in tiles.Values)
             level.tiles.Add(new Vector3(t.pos.x, t.height, t.pos.y));
 
-        string fileName = string.Format("Assets/Resouces/Levels/{1}.asset", filePath, name);
+        string fileName = string.Format("Assets/Resources/Levels/{1}.asset", filePath, name);
         AssetDatabase.CreateAsset(level, fileName);
     }
 
@@ -217,7 +217,7 @@ public class LevelCreator : MonoBehaviour {
         filePath += "/Levels";
 
         if (!Directory.Exists(filePath))
-            AssetDatabase.CreateFolder("Assets/Resouces", "Levels");
+            AssetDatabase.CreateFolder("Assets/Resources", "Levels");
         AssetDatabase.Refresh();
     }
 
