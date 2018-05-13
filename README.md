@@ -7,7 +7,7 @@
   - [ ] Dynamic UI
   - [ ] Game States
   - [x] 3D Non-Square maps (maps of any shape)
-  - [ ] Randomly generated & saved maps
+  - [x] Randomly generated & saved maps
   - [ ] Smooth Camera system
   - [ ] Flexible navigation & AI
   - [ ] Job system
