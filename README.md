@@ -8,7 +8,7 @@
   - [ ] Game States
   - [x] 3D Non-Square maps (maps of any shape)
   - [x] Randomly generated & saved maps
-  - [ ] Smooth Camera system
+  - [x] Smooth Camera system
   - [ ] Flexible navigation & AI
   - [ ] Job system
   - [ ] Ability System (used for attacking, defence, etc.)
