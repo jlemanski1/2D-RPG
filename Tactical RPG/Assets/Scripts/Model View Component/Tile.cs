@@ -8,9 +8,13 @@ public class Tile : MonoBehaviour {
     public Point pos;
     public int height;
 
+    public GameObject content;  // Entity on the tile e.g. Unit, Tree, Trap, etc.
+
     // Center of the tile
     public Vector3 center { get { return new Vector3(pos.x, height * stepHeight, pos.y); } }
 
+    [HideInInspector] public Tile prev;     // Tile that was traversed to reach the point
+    [HideInInspector] public int distance;  // Number of tiles traversed to reach the point
 
     /// <summary>
     /// Visually reflect any new values
