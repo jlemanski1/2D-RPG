@@ -5,9 +5,6 @@ using System.IO;
 
 public class LevelCreator : MonoBehaviour {
 
-    // TODO: Clean up file for future readability
-
-
     [SerializeField] GameObject tileViewPrefab;
     [SerializeField] GameObject tileSelectionIndicatorPrefab;
 
