@@ -9,6 +9,10 @@ public class BattleController : StateMachine {
     public Transform tileSelectionIndicator;
     public Point pos;
 
+    public GameObject hero;
+    public Unit currentUnit;
+    public Tile currentTile { get { return level.GetTile(pos); } }
+
     private void Start() {
         ChangeState<InitBattleState>();
     }

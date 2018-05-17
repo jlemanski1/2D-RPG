@@ -5,11 +5,14 @@
 ## Planned features
 
   - [ ] Dynamic UI
-  - [ ] Game States
+  - [x] Game States (Battle States implemented
   - [x] 3D Non-Square maps (maps of any shape)
   - [x] Randomly generated & saved maps
   - [x] Smooth Camera system
-  - [ ] Flexible navigation & AI
+  - [x] Unit Movement
+  - [x] Flexible navigation
+  - [ ] AI pathfinding
   - [ ] Job system
   - [ ] Ability System (used for attacking, defence, etc.)
   - [ ] Animation Ststem (UI animations & animated units)
+      - [x] Basic unit tween animation for movement
