@@ -12,6 +12,7 @@
   - [x] Unit Movement
   - [x] Flexible navigation
   - [ ] AI pathfinding
+  - [ ] Dialouge system with localization support
   - [ ] Job system
   - [ ] Ability System (used for attacking, defence, etc.)
   - [ ] Animation Ststem (UI animations & animated units)
