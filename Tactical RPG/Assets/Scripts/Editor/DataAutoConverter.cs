@@ -52,6 +52,7 @@ public class DataAutoConverter : AssetPostprocessor {
     /// <summary>
     /// Parse the data and create the necessary ScriptableObject in the Data/Resources/ folder
     /// </summary>
+    [MenuItem("Data Auto Convert/Parse Enemies")]
     static void ParseEnemies() {
         string filePath = Application.dataPath + "/Data/Enemies_test.csv";
         if (!File.Exists(filePath)) {
@@ -63,7 +64,8 @@ public class DataAutoConverter : AssetPostprocessor {
         filePath = "Assets/Data/Resources/";
         for (int i = 1; i < readText.Length; i++) {
             EnemyData enemyData = ScriptableObject.CreateInstance<EnemyData>();
-            enemyData.Load(readText[1]);
+            enemyData.Load(readText[1]);    // Only load 1st enemy for now (IMP)
+
             string fileName = string.Format("{0}{1}.asset", filePath, enemyData.name);
             AssetDatabase.CreateAsset(enemyData, fileName);
         }
@@ -74,6 +76,7 @@ public class DataAutoConverter : AssetPostprocessor {
     /// Parse the conversation data and create the necessary Scriptable Object for the
     /// ConversationController to use
     /// </summary>
+    [MenuItem("Data Auto Convert/Parse Dialogue")]
     static void ParseDialogue() {
         string filePath = Application.dataPath + "/Data/Conversation_Test.csv";
         if (!File.Exists(filePath)) {
@@ -87,6 +90,7 @@ public class DataAutoConverter : AssetPostprocessor {
         for (int i = 1; i < readText.Length; i++) {
             SpeakerData speakerData = ScriptableObject.CreateInstance<SpeakerData>();
             speakerData.Load(readText[1]);  // Load 1st line of actual data
+
             string fileName = string.Format("{0}{1}.asset", filePath, speakerData.speakerName);
             AssetDatabase.CreateAsset(speakerData, fileName);
         }
