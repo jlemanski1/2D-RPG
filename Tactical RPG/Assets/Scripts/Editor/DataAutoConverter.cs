@@ -29,6 +29,7 @@ public class DataAutoConverter : AssetPostprocessor {
     static DataAutoConverter() {
         parsers = new Dictionary<string, Action>();
         parsers.Add("Enemies_test.csv", ParseEnemies);
+        parsers.Add("Conversation_Test.csv", ParseDialogue);
     }
 
 
@@ -63,8 +64,31 @@ public class DataAutoConverter : AssetPostprocessor {
         for (int i = 1; i < readText.Length; i++) {
             EnemyData enemyData = ScriptableObject.CreateInstance<EnemyData>();
             enemyData.Load(readText[1]);
-            string fileName = string.Format("{0} {1}.asset", filePath, enemyData.name);
+            string fileName = string.Format("{0}{1}.asset", filePath, enemyData.name);
             AssetDatabase.CreateAsset(enemyData, fileName);
+        }
+    }
+
+
+    /// <summary>
+    /// Parse the conversation data and create the necessary Scriptable Object for the
+    /// ConversationController to use
+    /// </summary>
+    static void ParseDialogue() {
+        string filePath = Application.dataPath + "/Data/Conversation_Test.csv";
+        if (!File.Exists(filePath)) {
+            Debug.LogError("ERROR! Missing Conversation Data: " + filePath);
+            return;
+        }
+
+        string[] readText = File.ReadAllLines("Assets/Data/Conversation_Test.csv");
+        Debug.Log("readText: " + readText);
+        filePath = "Assets/Data/Resources/";
+        for (int i = 1; i < readText.Length; i++) {
+            SpeakerData speakerData = ScriptableObject.CreateInstance<SpeakerData>();
+            speakerData.Load(readText[1]);  // Load 1st line of actual data
+            string fileName = string.Format("{0}{1}.asset", filePath, speakerData.speakerName);
+            AssetDatabase.CreateAsset(speakerData, fileName);
         }
     }
 }

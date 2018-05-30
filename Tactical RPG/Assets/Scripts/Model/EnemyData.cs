@@ -4,6 +4,7 @@ using UnityEngine;
 /// <summary>
 /// Loads and holds an entry of the enemy data spreadsheet
 /// </summary>
+[System.Serializable]
 public class EnemyData : ScriptableObject {
 
     public int hp;          // Health points

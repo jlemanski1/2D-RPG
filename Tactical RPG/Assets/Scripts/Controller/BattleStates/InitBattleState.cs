@@ -18,7 +18,7 @@ public class InitBattleState : BattleState {
         SelectTile(p);
         SpawnTestUnits();
         yield return null;
-        owner.ChangeState<SelectUnitState>();
+        owner.ChangeState<CutSceneState>();
     }
 
     
